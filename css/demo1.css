@@ -1,0 +1,247 @@
+div.slider {
+	position: relative;
+	height: 600px;
+	width: 100%;
+	overflow: hidden;
+	margin: auto;
+}
+
+div#ipresenter div#preloader {
+	position: absolute;
+	display: block;
+	width: 150px;
+	height: 5px;
+	z-index: 200;
+	border: #CCC 1px solid;
+	border-radius: 4px;
+	padding: 1px;
+	background: #FFF;
+	-webkit-transform: translate(-75px, 0px);
+	-moz-transform: translate(-75px, 0px);
+	-o-transform: translate(-75px, 0px);
+	-ms-transform: translate(-75px, 0px);
+	transform: translate(-75px, 0px);
+	box-shadow: 0px 0px 8px rgba(200,200,200,1);
+}
+
+div#ipresenter div#preloader div {
+	display: block;
+	width: 0%;
+	height: 5px;
+	background: #CCC;
+	border-radius: 3px;
+}
+
+div#ipresenter div.step {
+	max-width: 800px;
+	min-width: 600px;
+	text-align: center;
+	z-index: 10;
+}
+
+div#ipresenter div.step h2, div.step p {
+	text-align: left;
+	color:#fff;
+	font-size:4em;
+	font-weight:200;
+	width: 100%;
+	margin: 2em 0 0 1em;
+}
+div#ipresenter div.step img{
+	margin-right:5em;
+}
+
+div#ipresenter div#intro {
+	width: 800px;
+}
+
+div#ipresenter div#intro img {
+	float: left;
+}
+
+div#ipresenter div#capture h2 {
+	text-align: center;
+	color:#fff;
+	font-size:3.9em;
+	font-weight:200;
+	margin:2em 0 0 0;
+}
+
+a.ipresenter_stepsNav {
+	display: block;
+	cursor: pointer;
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	background: url(../images/img-sprite.png);
+	top: 43%;
+	-webkit-transition: opacity 150ms ease-out;
+	-moz-transition: opacity 150ms ease-out;
+	-o-transition: opacity 150ms ease-out;
+	transition: opacity 150ms ease-out;
+}
+
+a.ipresenter_stepsNav:active {
+	background: url(../images/img-sprite.png);
+}
+
+a#ipresenter_nextStep {
+	right: 120px;
+	background-position: -75px -30px;
+}
+
+a#ipresenter_prevStep {
+	left: 120px;
+	background-position: 0px -30px
+}
+
+div.slider div.ipresenter-controlNav {
+	display: inline-block;
+	position: absolute;
+	left: 499px;
+	bottom: 20px;
+}
+
+div.slider div.ipresenter-controlNav a {
+	float: left;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+	margin-left: 20px;
+	overflow: hidden;
+	border-radius: 3px;
+	height: 40px;
+	width: 64px;
+}
+
+div.slider div.ipresenter-controlNav div.ipresenter-items ul {
+	list-style: none;
+}
+
+div.slider div.ipresenter-controlNav div.ipresenter-items ul li {
+	float: left;
+	display: none;
+}
+/*-- responsine-design --*/
+@media screen and (max-width: 1280px) {
+	div#ipresenter div.step img {
+		margin-right: 4em;
+	}
+	div#ipresenter div#capture h2 {
+		margin: 1em 0 0 0;
+		font-size:3.5em;
+	}
+	div#ipresenter div.step h2, div.step p {
+		font-size: 3.5em;
+		margin: 1.5em 0 0 1em;
+	}
+	a#ipresenter_prevStep {
+		left: 90px;
+	}
+	a#ipresenter_nextStep {
+		right: 90px;
+	}
+	div.slider {
+		height: 550px;
+	}
+}
+@media screen and (max-width: 1024px) {
+	div.slider {
+		height: 480px;
+	}
+	div#ipresenter div#intro img {
+		width: 50%;
+	}
+	div#ipresenter div.step img {
+		margin-right: 3em;
+		width: 65%;
+	}
+	div#ipresenter div#capture h2 {
+		font-size:3.2em;
+	}
+	div#ipresenter div.step h2, div.step p {
+		font-size: 3.4em;
+	}
+	div#ipresenter div#intro {
+		width: 720px;
+	}
+	a.ipresenter_stepsNav {
+		width: 50px;
+		height: 50px;
+		background-size: 350px;
+	}
+	a#ipresenter_nextStep {
+		right: 20px;
+		background-position: -54px -22px;
+	}
+	a#ipresenter_prevStep {
+		left: 20px;
+		background-position: 0px -22px;
+	}
+}
+@media screen and (max-width: 800px) {
+	div.slider {
+		height: 400px;
+	}	
+	div#ipresenter div#intro img {
+		width: 50%;
+		margin-left: 3em;
+	}
+	div#ipresenter div.step img {
+		margin-right: 2em;
+		width: 60%;
+	}
+	div#ipresenter div#capture h2 {
+		font-size:2.8em;
+	}
+	div#ipresenter div.step h2, div.step p {
+		font-size: 3em;
+	}
+}
+@media screen and (max-width: 640px) {
+	div.slider {
+		height: 300px;
+	}
+	div#ipresenter div.step h2, div.step p {
+		display: none;
+	}
+	div#ipresenter div#intro img {
+		margin-left: 13em;
+	}
+}
+@media screen and (max-width: 480px) {
+	div.slider {
+		height: 250px;
+	}
+	div#ipresenter div.step img {
+		margin-right: 0;
+		width: 50%;
+	}
+	div#ipresenter div#intro img {
+		margin-left: 15em;
+		width: 40%;
+	}
+}
+@media screen and (max-width: 320px) {
+	div.slider {
+		height: 200px;
+	}
+	div#ipresenter div.step img {
+		width: 35%;
+	}
+	div#ipresenter div#intro img {
+		width: 30%;
+		margin-left: 18em;
+	}
+	a.ipresenter_stepsNav {
+		width: 40px;
+		height: 40px;
+		background-size: 280px;
+	}
+	a#ipresenter_nextStep {
+		right: 10px;
+		background-position: -43px -18px;
+	}
+	a#ipresenter_prevStep {
+		left: 10px;
+		background-position: 0px -18px;
+	}
+}

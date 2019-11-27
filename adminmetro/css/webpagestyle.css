@@ -1,0 +1,87 @@
+body {
+	margin: 0px 70px;
+	padding: 0px;
+	width: 1200px;
+	background: url('../image/background.jpg');
+}
+
+#logo {
+	float: left;
+	height: 200px;
+	width : 340px;
+	border: 2px solid #BD8F8F;
+	cursor: ;
+	margin: 5px 0px 5px 5px;
+	background-attachment: fixed;
+}
+
+#banner {
+	color: Green;
+	float: right;
+	height: 200px;
+	width : 840px;
+	border: 2px solid #BD8F8F;
+	margin: 5px 5px 5px 0px;
+}
+
+#nav {
+	width: relative;
+	margin: 5px;
+	clear: both;
+	border: 2px solid #BD8F8F;
+	background-attachment: fixed;
+}
+
+#nav ul li a{
+	color: white;
+}
+
+#nav ul li{
+	display: inline;
+	text-decoration: underline;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 1px 10px;
+}
+
+#main {
+	float: left;
+	margin: 5px 5px;
+	width : 870px;
+	height: relative;
+	border: 2px solid #BD8F8F;
+}
+
+#sidebar {
+	float: right;
+	margin: 5px 5px;
+	width : 300px;
+	height: relative;
+	border: 2px solid #BD8F8F;
+}
+
+#footer{
+	margin: 10px 5px;
+	clear: both;
+	width : relative;
+	height: 30px;
+	border: 2px solid #BD8F8F;
+	color: White;
+}
+
+.required{
+	color: #ff0000;
+}
+
+#form{
+	margin: 10px;
+}
+
+label {
+	width: 5em;
+	color: green;
+}
+
+select {
+width: 150px;
+}

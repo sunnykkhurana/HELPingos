@@ -1,0 +1,10 @@
+<script async="async" src="https://www.paypalobjects.com/js/external/paypal-button.min.js?merchant=k991377@gmail.com" 
+									data-button="buynow" 
+									data-name="Orange" 
+									data-amount="1" 
+									data-currency="USD" 
+									data-shipping="0.1" 
+									data-tax="0.1" 
+									data-callback="http://localhost/HELPingos/order.php?total_amount=<?php echo '123'; ?>" 
+									data-return="http://localhost/HELPingos/order.php?total_amount=<?php echo '123'; ?>" 
+									data-env="sandbox"></script>
